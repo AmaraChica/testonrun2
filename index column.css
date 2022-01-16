@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Merriweather&family=Sofia&display=swap");
+html {
+  margin: 0;
+  color: #C84B31;
+  background-color: #faf8f5;
+  font-family: "Merriweather", serif;
+  outline: none;
+  text-decoration: none;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.0rem;
+  font-weight: 900;
+  
+}
+h2 {
+  width:0ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 12s steps(15);
+  border-right: 5px solid;
+}
+@keyframes text{
+  0%{
+    width: 0ch;
+  }
+  50%{
+    width: 28ch;
+  }
+}
+
+.click a {
+	  background-color: white;
+    padding: 22px 24px;
+    color: black;
+    border-radius: 6px;
+    border-bottom: 4px solid hsl(241, 3%, 73%);
+    border-top: 0px;
+    transition: all 0.1s ease-in-out;
+    text-decoration: none;
+}
+
+.click:hover {
+	border-bottom-width: 0;
+    border-top-width: 4px;
+}

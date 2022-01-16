@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Merriweather&family=Sofia&display=swap");
+html {
+  margin: 0;
+  color: #252525;
+  background-color: #faf8f5;
+  font-family: "Merriweather", serif;
+}
+img{
+   width: 155px;
+  height: 150px;
+}
+main{
+  max-width: 65ch;
+  padding:1em 10em 0.2em 10em;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #C84B31;  
+}
+h5 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #d86d57;  
+}
+
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.passages {
+  justify-content: center;
+  row-gap: 4em;
+  text-align: justify;
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  font-weight: 700;
+  color: #C84B31;
+}
+
+
+
+.intro {
+  column-span: all;
+  font-weight: 900;
+  letter-spacing: -1px;
+  row-gap: 4em;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.row_nav{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 100px;
+}
+.card_nav{
+  background-color: #faf8f5;
+  position: relative;
+  flex: 1;
+  max-width:900px;
+  height: 60px;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1.5px #3b3b3b;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav{
+  float: initial;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  margin-left: 30px;
+  padding-top: 20px;
+  position: relative;
+}
+nav ul> li> a{
+  text-decoration: none;
+  color: #197697;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+nav ul> li> a:hover{
+  color: #c71e12;
+}
+nav ul> li> a::before{
+  content: '';
+  display: block;
+  height: 8px;
+  width: 100%;
+  background-color: #e6550d;
+  
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 500ms;
+}
+nav ul> li> a:hover::before{
+  width: 100%;
+
+}
+
+.corner {
+  display: flex;
+
+
+  /* OPTIONAL: Reverse the order of image and content */
+  flex-direction: row;
+
+  /* OPTIONAL: Spacing between items */
+  margin: 3em;
+}
+.row{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.card{
+  background-color: #F5F5F5;
+  position: relative;
+  flex: 1;
+  max-width:700px;
+  height: 180px;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px #5e5c5d;
+  
+}
+
+.corner__image {
+  width: 138px;
+  border-radius: 50%;
+  margin-right: 2.5em;
+  margin-top: 1em;
+  float: right;
+}
+
+.card .corner__feature {
+  /* Take the remaining width */
+  font-size: 1.0rem;
+  float:initial;
+  padding-left: 1.75em;
+  text-decoration: none;
+  color: #121212;
+
+}
+.card .corner__feature a {
+  color:   #121212;
+  text-decoration: none;
+}
+
